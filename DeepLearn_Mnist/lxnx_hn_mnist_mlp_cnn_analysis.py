@@ -12,7 +12,7 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 #한글이 깨질시 실행하는코드 - 코랩전용
-# %matplotlib inline
+""" # %matplotlib inline
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 !apt-get install -y fonts-nanum*
@@ -25,7 +25,7 @@ import matplotlib as mpl
 path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
 font_name = mpl.font_manager.FontProperties(fname=path).get_name()
 plt.rcParams['font.family'] = font_name
-mpl.rc('axes', unicode_minus=False)
+mpl.rc('axes', unicode_minus=False) """
 
 """# MNIST 손글씨 숫자 분류를 위한 딥러닝 모델 구현 및 성능 비교
 
@@ -105,7 +105,7 @@ mpl.rc('axes', unicode_minus=False)
 # Commented out IPython magic to ensure Python compatibility.
 # 이 셀은 노트북 실행 시 가장 먼저 한 번만 실행하면 됩니다.
 # 필요한 라이브러리 설치 (Gradio)
-!pip install gradio -q
+#!pip install gradio -q
 
 # 주요 라이브러리 임포트
 import tensorflow as tf
